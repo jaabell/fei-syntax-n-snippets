@@ -1,0 +1,16 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// simulate constitutive testing undrained simple shear use material # <.> strain_increment_size = <.> maximum_strain = <.> number_of_times_reaching_maximum_strain = <.>;
+simulate constitutive testing undrained simple shear use material # $1 
+	strain_increment_size = $2 
+	maximum_strain = $3 
+	number_of_times_reaching_maximum_strain = $4;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>simulate_constitutive_testing_undrained_simple_shear</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

@@ -1,0 +1,14 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add element # <.> type 4NodeShell_MITC4 with nodes (<.>, <.>, <.>, <.>) use material # <.> thickness = <L>;
+add element # $1 type 4NodeShell_MITC4 with nodes ($2, $3, $4, $5) use material # $6 
+	thickness = $7;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_element_4NodeShell_MITC4_nodes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

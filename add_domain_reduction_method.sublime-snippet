@@ -1,0 +1,28 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add domain reduction method loading time_step = <time> scale_factor = <.> number_of_steps = <.> number_of_drm_nodes = <.> number_of_drm_elements = <.> x_max = <length> x_min = <length> y_max = <length> y_min = <length> z_max = <length> z_min = <length> element_file = "filename" nodes_file = "filename" displacement_file = "filename" acceleration_file = "filename";
+add domain reduction method loading 
+	time_step = $1 
+	scale_factor = $2 
+	number_of_steps = $3 
+	number_of_drm_nodes = $4 
+	number_of_drm_elements = $5 
+	x_max = $6 
+	x_min = $7 
+	y_max = $8 
+	y_min = $9 
+	z_max = $10 
+	z_min = $11 
+	element_file = $12 
+	nodes_file = $13 
+	displacement_file = $14 
+	acceleration_file = $15;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_domain_reduction_method</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

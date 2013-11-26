@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>fei</string>
+		<string>essi</string>
+	</array>
+	<key>foldingStartMarker</key>
+	<string>.*[^;]|{</string>
+	<key>foldingStopMarker</key>
+	<string>;|}</string>
+	<key>name</key>
+	<string>fei</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Comments</string>
+			<key>match</key>
+			<string>//.*</string>
+			<key>name</key>
+			<string>comment.line.double-slash</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>If </string>
+			<key>match</key>
+			<string>if|while|else</string>
+			<key>name</key>
+			<string>keyword.control.fei</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>FEI reserved keywords (first level)</string>
+			<key>match</key>
+			<string>\b(a0|a1|a2|a3|a4|acceleration|acceleration_file|acceleration_scale_unit|add|algorithm|alpha|and|armstrong_frederick_cr|armstrong_frederick_ha|at|bending_Iy|bending_Iz|beta|beta_min|check|compressive_strength|constant|constitutive|constrain|constraint|contact|contact_plane_vector|control|convergence|cR1|cR2|critical_stress_ratio_M|cross_section|crushing_strength|damping|databasename|define|direction|displacement|displacement_file|displacement_scale_unit|dof|dofs|domain|drained|druckerprager_angle|e0|each|elastic_modulus|elastic_modulus_horizontal|elastic_modulus_vertical|element|element_file|equal|equaldof|factor|field|filename|fix|force_file|forces|free|friction_ratio|Fx|Fy|Fz|gamma|Gauss|h_in|help|host|implicit|imposed|Imx|Imy|Imz|in|increment|initial_confining_strain|initial_confining_stress|initial_mean_pressure|integration_points|IntegrationRule|integrator|isotropic_hardening_rate|joint_1_offset|joint_2_offset|K_f|K_s|k_x|k_y|k_z|kappa|kd_in|kinematic_hardening_rate|lambda|length|linear|load|loading|M_in|magnitude|magnitudes|mass|mass_density|master|material|maximum_number_of_iterations|maximum_iterations|maximum_strain|maximum_time_step|mean|mesh|method|minimum_bulk_modulus|minimum_time_step|model|motion|mx|Mx|my|My|mysql|mz|Mz|name|new|node|nodes|nodes_file|normal_stiffness|number_of_drm_elements|number_of_drm_nodes|number_of_iterations|number_of_modes|number_of_steps|number_of_subincrements|number_of_times_reaching_maximum_strain|of|password|path_series|path_time_series|point|points|poisson_ratio|poisson_ratio_h_h|poisson_ratio_h_v|porosity|port|pressure|pressure_reference_p0|print|R0|reduction|reference_void_ratio|remove|response|restore|rho_f|rho_s|ricker2nd_wavelet|sanisand2004|sanisand2004_A0|sanisand2004_c|sanisand2004_ch|sanisand2004_cz|sanisand2004_ec_ref|sanisand2004_G0|sanisand2004_h0|sanisand2004_lambda_c|sanisand2004_m|sanisand2004_Mc|sanisand2004_nb|sanisand2004_nd|sanisand2004_p_cut|sanisand2004_Pat|sanisand2004_xi|sanisand2004_z_max|sanisand2008_A0|sanisand2008_alpha_cc|sanisand2008_c|sanisand2008_ch|sanisand2008_cz|sanisand2008_ec_ref|sanisand2008_G0|sanisand2008_h0|sanisand2008_K0|sanisand2008_k_c|sanisand2008_lambda|sanisand2008_m|sanisand2008_nb|sanisand2008_nd|sanisand2008_p0|sanisand2008_p_in|sanisand2008_p_r|sanisand2008_Pat|sanisand2008_rho_c|sanisand2008_theta_c|sanisand2008_X|sanisand2008_xi|sanisand2008_z_max|save|scale_factor|section|self_weight|series_file|shear|shear_modulus|shear_modulus_h_v|simple|simulate|sine_wave|single|slave|socket|solver|stage|state|static|steps|stiffness|stiffness_to_use|strain|strain_at_compressive_strength|strain_at_crushing_strength|strain_hardening_ratio|strain_increment_size|stress|surface|tangential_stiffness|tensile_strength|tension_softening_stiffness|test|testing|thickness|time_step|to|tolerance|tolerance_1|tolerance_2|torsion_Jx|transient|triaxial|truss|type|undrained|uniaxial_concrete02|uniaxial_elastic|uniaxial_steel01|uniaxial_steel02|unit|use|username|using|value|variable transient|variable_node_brick_8_to_27|velocity_file|velocity_scale_unit|viscoelastic_modulus|von_mises_radius|with|x_max|x_min|xi_in|xz_plane_vector|y_max|y_min|yield_strength|z_max|z_min|bye)\b</string>
+			<key>name</key>
+			<string>keyword.other.fei</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>These are keywords which change within similar commands. So called second level keywords.</string>
+			<key>match</key>
+			<string>\b(20NodeBrick|20NodeBrick|20NodeBrick_elastic|20NodeBrick_upU|27NodeBrick|27NodeBrick|27NodeBrick_elastic|3NodeShell_ANDES|4NodeShell_ANDES|4NodeShell_MITC4|4NodeShell_NewMITC4|8NodeBrick|8NodeBrick|8NodeBrick_elastic|8NodeBrick_up|8NodeBrick_upU|8NodeBrickLT|beam_9dof_elastic|beam_displacement_based|beam_elastic|beam_elastic_lumped_mass|camclay|camclay_accelerated|Caughey3rd|Caughey4th|displacement_control|druckerprager_isotropic_hardening|druckerprager_isotropic_hardening_accelerated|druckerprager_kinematic_hardening|druckerprager_kinematic_hardening_accelerated|druckerprager_perfectly_plastic|druckerprager_perfectly_plastic_accelerated|dynamic|eigen|Elastic_Membrane_Plate|explicit|Hilber_Hughes_Taylor|implicit|linear|linear_elastic_crossanisotropic|linear_elastic_isotropic_3d|Membrane_Plate_Fiber|Modified_Newton|Newmark|Newton|Norm_Displacement_Increment|Norm_Unbalance|ormsby_wavelet|path_series|path_time_series|penalty|penalty_for_applying_generalized_displacement|pisano|ProfileSPD|Rayleigh|sanisand2008|UMFPack|vonmises_isotropic_hardening|vonmises_isotropic_hardening_accelerated|vonmises_kinematic_hardening|vonmises_kinematic_hardening_accelerated|vonmises_linear_kinematic_hardening|vonmises_linear_kinematic_hardening_accelerated|vonmises_perfectly_plastic|vonmises_perfectly_plastic_accelerated|vonmises_perfectly_plastic_LT|while|whos|With_no_convergence_check20NodeBrick|20NodeBrick|20NodeBrick_elastic|20NodeBrick_upU|27NodeBrick|27NodeBrick|27NodeBrick_elastic|3NodeShell_ANDES|4NodeShell_ANDES|4NodeShell_MITC4|4NodeShell_NewMITC4|8NodeBrick|8NodeBrick|8NodeBrick_elastic|8NodeBrick_up|8NodeBrick_upU|8NodeBrickLT|beam_9dof_elastic|beam_displacement_based|beam_elastic|beam_elastic_lumped_mass|camclay|camclay_accelerated|Caughey3rd|Caughey4th|displacement_control|druckerprager_isotropic_hardening|druckerprager_isotropic_hardening_accelerated|druckerprager_kinematic_hardening|druckerprager_kinematic_hardening_accelerated|druckerprager_perfectly_plastic|druckerprager_perfectly_plastic_accelerated|dynamic|eigen|Elastic_Membrane_Plate|explicit|Hilber_Hughes_Taylor|implicit|Last_Committed_Stiffness|linear|linear_elastic_crossanisotropic|linear_elastic_isotropic_3d|Membrane_Plate_Fiber|Modified_Newton|Newmark|Newton|Norm_Displacement_Increment|Norm_Unbalance|ormsby_wavelet|path_series|path_time_series|penalty|penalty_for_applying_generalized_displacement|pisano|ProfileSPD|Rayleigh|sanisand2008|static|UMFPack|vonmises_isotropic_hardening|vonmises_isotropic_hardening_accelerated|vonmises_kinematic_hardening|vonmises_kinematic_hardening_accelerated|vonmises_linear_kinematic_hardening|vonmises_linear_kinematic_hardening_accelerated|vonmises_perfectly_plastic|vonmises_perfectly_plastic_accelerated|vonmises_perfectly_plastic_LT|while|whos|With_no_convergence_check|Current_Stiffness|Initial_Stiffness|Last_Committed_Stiffness|ax|ay|azF_fluid_x|F_fluid_y|F_fluid_z|rx|ry|rz|ux|uy|uz|all)\b</string>
+			<key>name</key>
+			<string>constant.other.fei</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Numbers like 1, 1.0, 1.2e2, 1.2e+3, 1.2e-3, .1, .1e+3, .1e-3, .1e2</string>
+			<key>match</key>
+			<string>[0-9]+\.[0-9]*([Ee][-+]?[0-9]+)?|(\.)?[0-9]+([Ee][-+]?[0-9]+)?</string>
+			<key>name</key>
+			<string>constant.numeric.fei</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Strings</string>
+			<key>match</key>
+			<string>(")+(.*)(")+</string>
+			<key>name</key>
+			<string>string.quoted.double</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.fei</string>
+	<key>uuid</key>
+	<string>f2c2f4ff-2592-4649-b8ba-3ecf8faaf57c</string>
+</dict>
+</plist>

@@ -1,0 +1,16 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add acceleration field # <.> ax = <accel> ay = <accel> az = <aaccel> ;
+add acceleration field # $1 
+	ax = $2 
+	ay = $3 
+	az = $4 ;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_acceleration_field_ax</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

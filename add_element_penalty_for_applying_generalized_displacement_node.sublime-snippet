@@ -1,0 +1,14 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add element # <.> type penalty_for_applying_generalized_displacement with node (<.>) stiffness = <corresponding unit to dof> dof DOFTYPE;
+add element # $1 type penalty_for_applying_generalized_displacement with node ($2) 
+	stiffness = $3 dof DOFTYPE;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_element_penalty_for_applying_generalized_displacement_node</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

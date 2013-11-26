@@ -1,0 +1,17 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// simulate <.> steps using variable transient algorithm time_step = <time> minimum_time_step = <time> maximum_time_step = <time> number_of_iterations = <.>;
+simulate $1 steps using variable transient algorithm 
+	time_step = $2 
+	minimum_time_step = $3 
+	maximum_time_step = $4 
+	number_of_iterations = $5;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>simulate_steps_using_variable_transient_algorithm</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>
