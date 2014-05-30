@@ -1,7 +1,7 @@
 <!-- FEI developer aids for Sublime Text  -->
 <snippet>
 	<content><![CDATA[
-// add element # <.> type 8NodeBrickLT with nodes (<.>, <.>, <.>, <.>, <.>, <.>, <.>, <.>) use material # <.> and acceleration field # <.>;
+// add element # <.> type 8NodeBrickLT with nodes (<.>, <.>, <.>, <.>, <.>, <.>, <.>, <.>) use material # <.>;
 add element # $1 type 8NodeBrickLT with nodes ($2, $3, $4, $5, $6, $7, $8, $9) use material # $10;
 
 

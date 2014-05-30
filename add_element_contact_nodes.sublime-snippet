@@ -1,12 +1,13 @@
 <!-- FEI developer aids for Sublime Text  -->
 <snippet>
 	<content><![CDATA[
-// add element # <.> type contact with nodes (<.>, <.>) normal_stiffness = <F/L^2> tangential_stiffness = <F/L^2> friction_ratio = <.> contact_plane_vector = (<.>, <.>, <.> );
+// add element # <.> type contact with nodes (<.>, <.>) normal_stiffness = <F/L^2> tangential_stiffness = <F/L^2> friction_ratio = <.> maximum_gap = <L> contact_plane_vector = (<.>, <.>, <.> );
 add element # $1 type contact with nodes ($2, $3) 
 	normal_stiffness = $4 
 	tangential_stiffness = $5 
 	friction_ratio = $6 
-	contact_plane_vector = ($7, $8, $9 );
+	maximum_gap = $7 
+	contact_plane_vector = ($8, $9, $10 );
 
 
 	]]></content>

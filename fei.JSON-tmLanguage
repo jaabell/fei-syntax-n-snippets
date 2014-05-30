@@ -25,10 +25,10 @@
           "name": "constant.other.fei", //constant.language.fei
           "comment": "These are keywords which change within similar commands. So called second level keywords."
         },
-        //{ "match": "[A-Za-z_][A-Za-z0-9_]+",
-        //  "name": "variable.parameter.fei",
-        //  "comment": "Variables like a, x, sigma_xx, Sigma_XY..."
-        //},
+        { "match": "[A-Za-z_][A-Za-z0-9_]+",
+         "name": "variable.other.fei",
+         "comment": "Variables like a, x, sigma_xx, Sigma_XY..."
+        },
         { "match": "[0-9]+\\.[0-9]*([Ee][-+]?[0-9]+)?|(\\.)?[0-9]+([Ee][-+]?[0-9]+)?",
           "name": "constant.numeric.fei",
           "comment": "Numbers like 1, 1.0, 1.2e2, 1.2e+3, 1.2e-3, .1, .1e+3, .1e-3, .1e2"
