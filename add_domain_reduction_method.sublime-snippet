@@ -1,23 +1,19 @@
 <!-- FEI developer aids for Sublime Text  -->
 <snippet>
 	<content><![CDATA[
-// add domain reduction method loading time_step = <time> scale_factor = <.> number_of_steps = <.> number_of_drm_nodes = <.> number_of_drm_elements = <.> x_max = <length> x_min = <length> y_max = <length> y_min = <length> z_max = <length> z_min = <length> element_file = "filename" nodes_file = "filename" displacement_file = "filename" acceleration_file = "filename";
-add domain reduction method loading 
-	time_step = $1 
-	scale_factor = $2 
-	number_of_steps = $3 
-	number_of_drm_nodes = $4 
-	number_of_drm_elements = $5 
-	x_max = $6 
-	x_min = $7 
-	y_max = $8 
-	y_min = $9 
-	z_max = $10 
-	z_min = $11 
-	element_file = $12 
-	nodes_file = $13 
-	displacement_file = $14 
-	acceleration_file = $15;
+// add domain reduction method loading # <.> time_step = <T> scale_factor = <.> number_of_steps = <.> number_of_boundary_nodes = <.> number_of_exterior_nodes = <.> number_of_drm_elements = <.> element_file = <string> boundary_nodes_file = <string> exterior_nodes_file = <string> displacement_file = <string> acceleration_file = <string>;
+add domain reduction method loading # $1 
+	time_step = $2 
+	scale_factor = $3 
+	number_of_steps = $4 
+	number_of_boundary_nodes = $5 
+	number_of_exterior_nodes = $6 
+	number_of_drm_elements = $7 
+	element_file = $8 
+	boundary_nodes_file = $9 
+	exterior_nodes_file = $10 
+	displacement_file = $11 
+	acceleration_file = $12;
 
 
 	]]></content>
