@@ -1,19 +1,20 @@
 <!-- FEI developer aids for Sublime Text  -->
 <snippet>
 	<content><![CDATA[
-// add material # <.> type PisanoLT mass_density '=' exp elastic_modulus_1atm = <F/L^2> poisson_ratio = <.> M_in = <.> kd_in = <.> xi_in = <.> h_in = <.> m_in = <.> initial_confining_stress = <F/L^2> n_in = <.> a_in = <.> eplcum_cr_in = <.>;
-add material # $1 type PisanoLT mass_density '=' exp 
-	elastic_modulus_1atm = $2 
-	poisson_ratio = $3 
-	M_in = $4 
-	kd_in = $5 
-	xi_in = $6 
-	h_in = $7 
-	m_in = $8 
-	initial_confining_stress = $9 
-	n_in = $10 
-	a_in = $11 
-	eplcum_cr_in = $12;
+// add material # <.> type PisanoLT mass_density = <.> elastic_modulus_1atm = <F/L^2> poisson_ratio = <.> M_in = <.> kd_in = <.> xi_in = <.> h_in = <.> m_in = <.> initial_confining_stress = <F/L^2> n_in = <.> a_in = <.> eplcum_cr_in = <.>;
+add material # $1 type PisanoLT 
+	mass_density = $2 
+	elastic_modulus_1atm = $3 
+	poisson_ratio = $4 
+	M_in = $5 
+	kd_in = $6 
+	xi_in = $7 
+	h_in = $8 
+	m_in = $9 
+	initial_confining_stress = $10 
+	n_in = $11 
+	a_in = $12 
+	eplcum_cr_in = $13;
 
 
 	]]></content>
