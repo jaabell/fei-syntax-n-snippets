@@ -1,7 +1,7 @@
 <!-- FEI developer aids for Sublime Text  -->
 <snippet>
 	<content><![CDATA[
-// add damping # <.> type Rayleigh with a0 = <time> a1 = <1/time> stiffness_to_use = <Initial_Stiffness|Current_Stiffness|Last_Committed_Stiffness>;
+// add damping # <.> type Rayleigh with a0 = <1/time> a1 = <time> stiffness_to_use = <Initial_Stiffness|Current_Stiffness|Last_Committed_Stiffness>;
 add damping # $1 type Rayleigh with 
 	a0 = $2 
 	a1 = $3 

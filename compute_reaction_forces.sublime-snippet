@@ -1,14 +1,13 @@
 <!-- FEI developer aids for Sublime Text  -->
 <snippet>
 	<content><![CDATA[
-// add domain reduction method loading # <.> hdf5_file = <string>;
-add domain reduction method loading # $1 
-	hdf5_file = $2;
+// compute reaction forces;
+compute reaction forces;
 
 
 	]]></content>
 	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-	<tabTrigger>add_domain_reduction_method</tabTrigger>
+	<tabTrigger>compute_reaction_forces</tabTrigger>
 	<!-- Optional: Set a scope to limit where the snippet will trigger -->
 	<scope>source.fei</scope>
 </snippet>

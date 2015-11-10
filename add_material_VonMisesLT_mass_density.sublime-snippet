@@ -1,0 +1,19 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add material # <.> type VonMisesLT mass_density = <M/L^3> elastic_modulus = <F/L^2> poisson_ratio = <.> von_mises_radius = <F/L^2> kinematic_hardening_rate = <F/L^2> isotropic_hardening_rate = <F/L^2> ;
+add material # $1 type VonMisesLT 
+	mass_density = $2 
+	elastic_modulus = $3 
+	poisson_ratio = $4 
+	von_mises_radius = $5 
+	kinematic_hardening_rate = $6 
+	isotropic_hardening_rate = $7 ;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_material_VonMisesLT_mass_density</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>
