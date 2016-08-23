@@ -1,5 +1,5 @@
 {
     "cmd": ["essi", "-nf", "$file"],
     "selector": "source.fei",
-    "shell": true
+    // "shell": true
 }
