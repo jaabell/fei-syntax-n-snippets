@@ -1,45 +1,43 @@
-// [PackageDev] target_format: plist, ext: tmLanguage
-{ "name": "fei",
-  "scopeName": "source.fei",
-  "fileTypes": ["fei", "essi"],
-  "foldingStartMarker": ".*[^;]|{",
-  "foldingStopMarker": ";|}",
-  "patterns": [
-        { "match": "//.*",
-          "name": "comment.line.double-slash",
-          "comment": "Comments"
-        },
-        { "match": "if|while|else",
-          "name": "keyword.control.fei",
-          "comment": "If "
-        },
-        { "match": "\\b(a0|a1|a2|a3|a4|acceleration|acceleration_file|acceleration_scale_unit|add|algorithm|alpha|and|armstrong_frederick_cr|armstrong_frederick_ha|at|bending_Iy|bending_Iz|beta|beta_min|check|compressive_strength|constant|constitutive|constrain|constraint|contact|contact_plane_vector|control|convergence|cR1|cR2|critical_stress_ratio_M|cross_section|crushing_strength|damping|databasename|define|direction|displacement|displacement_file|displacement_scale_unit|dof|dofs|domain|drained|druckerprager_angle|e0|each|elastic_modulus|elastic_modulus_horizontal|elastic_modulus_vertical|element|element_file|equal|equaldof|factor|field|filename|fix|force_file|forces|free|friction_ratio|Fx|Fy|Fz|gamma|Gauss|h_in|help|host|implicit|imposed|Imx|Imy|Imz|in|increment|initial_confining_strain|initial_confining_stress|initial_mean_pressure|integration_points|IntegrationRule|integrator|isotropic_hardening_rate|joint_1_offset|joint_2_offset|K_f|K_s|k_x|k_y|k_z|kappa|kd_in|kinematic_hardening_rate|lambda|length|linear|load|loading|M_in|magnitude|magnitudes|mass|mass_density|master|material|maximum_number_of_iterations|maximum_iterations|maximum_strain|maximum_time_step|mean|mesh|method|minimum_bulk_modulus|minimum_time_step|model|motion|mx|Mx|my|My|mysql|mz|Mz|name|new|node|nodes|nodes_file|normal_stiffness|number_of_drm_elements|number_of_drm_nodes|number_of_iterations|number_of_modes|number_of_steps|number_of_subincrements|number_of_times_reaching_maximum_strain|of|password|path_series|path_time_series|point|points|poisson_ratio|poisson_ratio_h_h|poisson_ratio_h_v|porosity|port|pressure|pressure_reference_p0|print|R0|reduction|reference_void_ratio|remove|response|restore|rho_f|rho_s|ricker2nd_wavelet|sanisand2004|sanisand2004_A0|sanisand2004_c|sanisand2004_ch|sanisand2004_cz|sanisand2004_ec_ref|sanisand2004_G0|sanisand2004_h0|sanisand2004_lambda_c|sanisand2004_m|sanisand2004_Mc|sanisand2004_nb|sanisand2004_nd|sanisand2004_p_cut|sanisand2004_Pat|sanisand2004_xi|sanisand2004_z_max|sanisand2008_A0|sanisand2008_alpha_cc|sanisand2008_c|sanisand2008_ch|sanisand2008_cz|sanisand2008_ec_ref|sanisand2008_G0|sanisand2008_h0|sanisand2008_K0|sanisand2008_k_c|sanisand2008_lambda|sanisand2008_m|sanisand2008_nb|sanisand2008_nd|sanisand2008_p0|sanisand2008_p_in|sanisand2008_p_r|sanisand2008_Pat|sanisand2008_rho_c|sanisand2008_theta_c|sanisand2008_X|sanisand2008_xi|sanisand2008_z_max|save|scale_factor|section|self_weight|series_file|shear|shear_modulus|shear_modulus_h_v|simple|simulate|sine_wave|single|slave|socket|solver|stage|state|static|steps|stiffness|stiffness_to_use|strain|strain_at_compressive_strength|strain_at_crushing_strength|strain_hardening_ratio|strain_increment_size|stress|surface|tangential_stiffness|tensile_strength|tension_softening_stiffness|test|testing|thickness|time_step|to|tolerance|tolerance_1|tolerance_2|torsion_Jx|transient|triaxial|truss|type|undrained|uniaxial_concrete02|uniaxial_elastic|uniaxial_steel01|uniaxial_steel02|unit|use|username|using|value|variable transient|variable_node_brick_8_to_27|velocity_file|velocity_scale_unit|viscoelastic_modulus|von_mises_radius|with|x_max|x_min|xi_in|xz_plane_vector|y_max|y_min|yield_strength|z_max|z_min|bye)\\b",
-          "name": "keyword.other.fei",
-          "comment": "FEI reserved keywords (first level)"
-        },
-        /*{ "match": "(GPa|Hz|Km|MPa|N|Pa|cm|g|kN|kPa|kg|m|mm|ms|ns|pi|s)&&(^([A-Za-z_][A-Za-z0-9_]+))",
-          "name": "constant.language.fei",
-          "comment": "Units!!"
-        },*/
-        { "match": "\\b(20NodeBrick|20NodeBrick|20NodeBrick_elastic|20NodeBrick_upU|27NodeBrick|27NodeBrick|27NodeBrick_elastic|3NodeShell_ANDES|4NodeShell_ANDES|4NodeShell_MITC4|4NodeShell_NewMITC4|8NodeBrick|8NodeBrick|8NodeBrick_elastic|8NodeBrick_up|8NodeBrick_upU|8NodeBrickLT|beam_9dof_elastic|beam_displacement_based|beam_elastic|beam_elastic_lumped_mass|camclay|camclay_accelerated|Caughey3rd|Caughey4th|displacement_control|druckerprager_isotropic_hardening|druckerprager_isotropic_hardening_accelerated|druckerprager_kinematic_hardening|druckerprager_kinematic_hardening_accelerated|druckerprager_perfectly_plastic|druckerprager_perfectly_plastic_accelerated|dynamic|eigen|Elastic_Membrane_Plate|explicit|Hilber_Hughes_Taylor|implicit|linear|linear_elastic_crossanisotropic|linear_elastic_isotropic_3d|Membrane_Plate_Fiber|Modified_Newton|Newmark|Newton|Norm_Displacement_Increment|Norm_Unbalance|ormsby_wavelet|path_series|path_time_series|penalty|penalty_for_applying_generalized_displacement|pisano|ProfileSPD|Rayleigh|sanisand2008|UMFPack|vonmises_isotropic_hardening|vonmises_isotropic_hardening_accelerated|vonmises_kinematic_hardening|vonmises_kinematic_hardening_accelerated|vonmises_linear_kinematic_hardening|vonmises_linear_kinematic_hardening_accelerated|vonmises_perfectly_plastic|vonmises_perfectly_plastic_accelerated|vonmises_perfectly_plastic_LT|while|whos|With_no_convergence_check20NodeBrick|20NodeBrick|20NodeBrick_elastic|20NodeBrick_upU|27NodeBrick|27NodeBrick|27NodeBrick_elastic|3NodeShell_ANDES|4NodeShell_ANDES|4NodeShell_MITC4|4NodeShell_NewMITC4|8NodeBrick|8NodeBrick|8NodeBrick_elastic|8NodeBrick_up|8NodeBrick_upU|8NodeBrickLT|beam_9dof_elastic|beam_displacement_based|beam_elastic|beam_elastic_lumped_mass|camclay|camclay_accelerated|Caughey3rd|Caughey4th|displacement_control|druckerprager_isotropic_hardening|druckerprager_isotropic_hardening_accelerated|druckerprager_kinematic_hardening|druckerprager_kinematic_hardening_accelerated|druckerprager_perfectly_plastic|druckerprager_perfectly_plastic_accelerated|dynamic|eigen|Elastic_Membrane_Plate|explicit|Hilber_Hughes_Taylor|implicit|Last_Committed_Stiffness|linear|linear_elastic_crossanisotropic|linear_elastic_isotropic_3d|Membrane_Plate_Fiber|Modified_Newton|Newmark|Newton|Norm_Displacement_Increment|Norm_Unbalance|ormsby_wavelet|path_series|path_time_series|penalty|penalty_for_applying_generalized_displacement|pisano|ProfileSPD|Rayleigh|sanisand2008|static|UMFPack|vonmises_isotropic_hardening|vonmises_isotropic_hardening_accelerated|vonmises_kinematic_hardening|vonmises_kinematic_hardening_accelerated|vonmises_linear_kinematic_hardening|vonmises_linear_kinematic_hardening_accelerated|vonmises_perfectly_plastic|vonmises_perfectly_plastic_accelerated|vonmises_perfectly_plastic_LT|while|whos|With_no_convergence_check|Current_Stiffness|Initial_Stiffness|Last_Committed_Stiffness|ax|ay|azF_fluid_x|F_fluid_y|F_fluid_z|rx|ry|rz|ux|uy|uz|all)\\b",
-          "name": "constant.other.fei", //constant.language.fei
-          "comment": "These are keywords which change within similar commands. So called second level keywords."
-        },
-        { "match": "[A-Za-z_][A-Za-z0-9_]+",
-         "name": "variable.other.fei",
-         "comment": "Variables like a, x, sigma_xx, Sigma_XY..."
-        },
-        { "match": "[0-9]+\\.[0-9]*([Ee][-+]?[0-9]+)?|(\\.)?[0-9]+([Ee][-+]?[0-9]+)?",
-          "name": "constant.numeric.fei",
-          "comment": "Numbers like 1, 1.0, 1.2e2, 1.2e+3, 1.2e-3, .1, .1e+3, .1e-3, .1e2"
-        },
-        { "match": "(\")+(.*)(\")+",
-          "name": "string.quoted.double",
-          "comment": "Strings"
-        }
-    ],
-    "uuid": "f2c2f4ff-2592-4649-b8ba-3ecf8faaf57c"
-}
-
-
-
+ // [PackageDev] target_format: plist, ext: tmLanguage                                                           
+ { "name": "fei",                                                                                                
+   "scopeName": "source.fei",                                                                                    
+   "fileTypes": ["fei", "essi"],                                                                                 
+   "foldingStartMarker": ".*[^;]|{",                                                                             
+   "foldingStopMarker": ";|}",                                                                                   
+   "patterns": [                                                                                                 
+         { "match": "//.*",                                                                                      
+           "name": "comment.line.double-slash",                                                                  
+           "comment": "Comments"                                                                                 
+         },                                                                                                      
+         { "match": "if|while|else",                                                                             
+           "name": "keyword.control.fei",                                                                        
+           "comment": "If "                                                                                      
+         },                                                                                                      
+         //{ "match": " \\b(|,|/|20NodeBrick|27NodeBrick|8NodeBrick|a0|a1|a2|a3|a4|acceleration|acceleration_file|acceleration_scale_unit|add|algorithm|algorithm|all|all|alpha|and|armstrong_frederick_cr|armstrong_frederick_ha|at|ax|ay|az|bending_Iy|bending_Iz|beta|check|compression|compressive_strength|compute|constant|constitutive|constrain|constraint|contact_plane_vector|control|convergence|cR1|cR2|cross_section|crushing_strength|damping|define|direction|disable|displacement|displacement_control|displacement_file|displacement_scale_unit|dof|dofs|dofs|domain|domain|drained|druckerprager_k|dynamic|e0|each|eigen|elastic3d|Elastic_Membrane_Plate|elastic_modulus|elastic_modulus_horizontal|elastic_modulus_vertical|element|elements|else|enable|equal|equaldof|every|exp|factor|fiber|fiber_cross_section|fiber_location|FiberSection|field|filename|fix|forces|free|friction_ratio|from|gamma|Gauss|hdf5_file|help|if|imposed|Imx|Imy|Imz|in|increment|initial_confining_stress|initial_normal_stiffness|initial_velocity|integration|integration_points|IntegrationRule|integrator|isotropic_hardening_rate|joint_1_offset|joint_2_offset|K_f|K_s|k_x|k_y|k_z|kinematic_hardening_rate|lambda|length|level|load|loading|magnitude|magnitudes|mass|mass_density|master|material|maximum_iterations|maximum_number_of_iterations|maximum_strain|maximum_time_step|mean|Membrane_Plate_Fiber|mesh|method|minimum_time_step|model|motion|mx|my|mz|name|NDMaterialLT|new|Niso3d_B|Niso3d_c|Niso3d_dphi|Niso3d_Ei|Niso3d_Er|Niso3d_Et|Niso3d_K|Niso3d_K0|Niso3d_K2|Niso3d_Kb|Niso3d_Kur|Niso3d_m|Niso3d_n|Niso3d_pa|Niso3d_phi0|Niso3d_Rf|node|nodes|non_converged_substeps|normal_damping|normal_stiffness|number_of_integration_points|number_of_iterations|number_of_modes|number_of_subincrements|number_of_times_reaching_maximum_strain|of|output|output|point|points|poisson_ratio|poisson_ratio_h_h|poisson_ratio_h_v|porosity|pressure|print|R0|reaction|reduction|remove|rho_f|rho_s|runTest|rx|ry|rz|sanisand2004_A0|sanisand2004_c|sanisand2004_ch|sanisand2004_cz|sanisand2004_ec_ref|sanisand2004_G0|sanisand2004_h0|sanisand2004_lambda_c|sanisand2004_m|sanisand2004_Mc|sanisand2004_nb|sanisand2004_nd|sanisand2004_p_cut|sanisand2004_Pat|sanisand2004_xi|sanisand2004_z_max|sanisand2008_A0|sanisand2008_alpha_cc|sanisand2008_c|sanisand2008_ch|sanisand2008_cz|sanisand2008_ec_ref|sanisand2008_G0|sanisand2008_h0|sanisand2008_K0|sanisand2008_k_c|sanisand2008_lambda|sanisand2008_m|sanisand2008_nb|sanisand2008_nd|sanisand2008_p0|sanisand2008_p_in|sanisand2008_p_r|sanisand2008_Pat|sanisand2008_rho_c|sanisand2008_theta_c|sanisand2008_X|sanisand2008_xi|sanisand2008_z_max|save|scale_factor|section|section_number|self_weight|set|shear|shear_modulus|shear_modulus_h_v|simple|simulate|single|slave|slave|solver|stage|static|steps|steps|stiffness_to_use|stiffning_rate|strain|strain_at_compressive_strength|strain_at_crushing_strength|strain_hardening_ratio|strain_increment_size|stress|stress_relative_tolerance|surface|tangential_damping|tangential_stiffness|tensile_strength|tension_softening_stiffness|test|testing|thickness|time_step|to|tolerance_1|tolerance_2|torsion_Jx|TorsionConstant_GJ|triaxial|type|undrained|uniform|use|using|ux|uy|uz|value|variable_node_brick_8_to_27|velocity_file|velocity_scale_unit|viscoelastic_modulus|von_mises_radius|while|whos|with|xz_plane_vector|yield_function_relative_tolerance|yield_strength|)\\b ",                                                            
+         //  "name": "keyword.other.fei",                                                                        
+         //  "comment": "FEI reserved 1st-lvl keywords"                                                          
+         //},                                                                                                    
+         /*{ "match": "(GPa|Hz|Km|MPa|N|Pa|cm|g|kN|kPa|kg|m|mm|ms|ns|pi|s)&&(^([A-Za-z_][A-Za-z0-9_]+))",        
+           "name": "constant.language.fei",                                                                      
+           "comment": "Units!!"                                                                                  
+         },*/                                                                                                    
+         { "match": " \\b(20NodeBrick|20NodeBrick_elastic|20NodeBrick_upU|20NodeBrickLT|27NodeBrick|27NodeBrick_elastic|27NodeBrickLT|3NodeShell_ANDES|4NodeShell_ANDES|4NodeShell_MITC4|4NodeShell_NewMITC4|8NodeBrick|8NodeBrick_elastic|8NodeBrick_up|8NodeBrick_upU|8NodeBrickLT|beam_9dof_elastic|beam_displacement_based|beam_elastic|beam_elastic_lumped_mass|BeamColumnDispFiber3d|Caughey3rd|Caughey4th|DOFTYPE|DruckerPragerArmstrongFrederickLT|DruckerPragerLT|DruckerPragerVonMisesLT|EightNodeBrickLTNoOutput|Energy_Increment|F_fluid_x|F_fluid_y|F_fluid_z|FORCETYPE|Forward_Euler|Multistep_Forward_Euler|Modified_Euler_Error_Control|Runge_Kutta_45_Error_Control|Backward_Euler|from_reactions|Fx|Fy|Fz|HardContact|Hilber_Hughes_Taylor|linear|linear_elastic_crossanisotropic|linear_elastic_isotropic_3d|linear_elastic_isotropic_3d_LT|Modified_Newton|Mx|My|Mz|Newmark|Newton|NonlinearIsotropic3DLT|Norm_Displacement_Increment|Norm_Unbalance|path_series|path_time_series|ProfileSPD|Rayleigh|sanisand2004|sanisand2008|ShearBeamLT|SoftContact|static|transient|truss|UMFPack|uniaxial_concrete02|uniaxial_elastic|uniaxial_steel01|uniaxial_steel02|variable transient|VonMisesLT|With_no_convergence_check|)\\b ",                                                              
+           "name": "constant.other.fei",                                                                         
+           "comment": "FEI reserved 2st-lvl keywords"                                                            
+         },                                                                                                      
+         { "match": "[A-Za-z_][A-Za-z0-9_]+",                                                                    
+          "name": "variable.other.fei",                                                                          
+          "comment": "Variables like a, x, sigma_xx, Sigma_XY..."                                                
+         },                                                                                                      
+         { "match": "[0-9]+\\.[0-9]*([Ee][-+]?[0-9]+)?|(\\.)?[0-9]+([Ee][-+]?[0-9]+)?",                      
+           "name": "constant.numeric.fei",                                                                       
+           "comment": "Numbers like 1, 1.0, 1.2e2, 1.2e+3, 1.2e-3, .1, .1e+3, .1e-3, .1e2"                       
+         },                                                                                                      
+         { "match": "(\")+(.*)(\")+",                                                                          
+           "name": "string.quoted.double",                                                                       
+           "comment": "Strings"                                                                                  
+         }                                                                                                       
+     ],                                                                                                          
+     "uuid": "f2c2f4ff-2592-4649-b8ba-3ecf8faaf57c"                                                              
+ }                                                                                                               
+ 
