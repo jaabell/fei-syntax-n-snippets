@@ -1,0 +1,16 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// define convergence test Norm_Displacement_Increment / Energy_Increment / Norm_Unbalance tolerance = <.> maximum_iterations = <.> verbose_level = <0>|<1>|<2>;
+define convergence test Norm_Displacement_Increment / Energy_Increment / Norm_Unbalance 
+	tolerance = $1 
+	maximum_iterations = $2 
+	verbose_level = $3|$4|$5;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>define_convergence_test_Norm_Displacement_Increment_Energy_Increment_Norm_Unbalance</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

@@ -1,0 +1,13 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// define static integrator displacement_control using node # <.> dof DOFTYPE increment <length>;
+define static integrator displacement_control using node # $1 dof DOFTYPE increment $2;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>define_static_integrator_displacement_control_using_node</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

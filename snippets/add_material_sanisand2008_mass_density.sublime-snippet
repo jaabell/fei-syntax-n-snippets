@@ -1,0 +1,43 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add material # <.> type sanisand2008 mass_density = <M/L^3>  e0 = <.>  sanisand2008_G0 = <.>  sanisand2008_K0 = <.> sanisand2008_Pat = <stress> sanisand2008_k_c = <.>  sanisand2008_alpha_cc = <.> sanisand2008_c = <.>  sanisand2008_xi = <.>  sanisand2008_lambda = <.>  sanisand2008_ec_ref = <.>  sanisand2008_m = <.>  sanisand2008_h0 = <.>  sanisand2008_ch = <.>  sanisand2008_nb = <.>  sanisand2008_A0 = <.> sanisand2008_nd = <.>  sanisand2008_p_r = <.>  sanisand2008_rho_c = <.>  sanisand2008_theta_c = <.>  sanisand2008_X = <.>  sanisand2008_z_max = <.>  sanisand2008_cz = <.>  sanisand2008_p0 = <stress>  sanisand2008_p_in = <.>  algorithm = <explicit|implicit>  number_of_subincrements = <.>  maximum_number_of_iterations = <.>  tolerance_1 = <.>  tolerance_2 = <.>;
+add material # $1 type sanisand2008 
+	mass_density = $2  
+	e0 = $3  
+	sanisand2008_G0 = $4  
+	sanisand2008_K0 = $5 
+	sanisand2008_Pat = $6 
+	sanisand2008_k_c = $7  
+	sanisand2008_alpha_cc = $8 
+	sanisand2008_c = $9  
+	sanisand2008_xi = $10  
+	sanisand2008_lambda = $11  
+	sanisand2008_ec_ref = $12  
+	sanisand2008_m = $13  
+	sanisand2008_h0 = $14  
+	sanisand2008_ch = $15  
+	sanisand2008_nb = $16  
+	sanisand2008_A0 = $17 
+	sanisand2008_nd = $18  
+	sanisand2008_p_r = $19  
+	sanisand2008_rho_c = $20  
+	sanisand2008_theta_c = $21  
+	sanisand2008_X = $22  
+	sanisand2008_z_max = $23  
+	sanisand2008_cz = $24  
+	sanisand2008_p0 = $25  
+	sanisand2008_p_in = $26  
+	algorithm = $27  
+	number_of_subincrements = $28  
+	maximum_number_of_iterations = $29  
+	tolerance_1 = $30  
+	tolerance_2 = $31;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_material_sanisand2008_mass_density</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

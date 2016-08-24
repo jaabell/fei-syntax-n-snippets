@@ -32,11 +32,11 @@ F_fluid_y
 F_fluid_z
 FORCETYPE
 Forward_Euler|Multistep_Forward_Euler|Modified_Euler_Error_Control|Runge_Kutta_45_Error_Control|Backward_Euler
+FrictionalPenaltyContact
 from_reactions
 Fx
 Fy
 Fz
-HardContact
 Hilber_Hughes_Taylor
 linear
 linear_elastic_crossanisotropic
@@ -58,7 +58,6 @@ Rayleigh
 sanisand2004
 sanisand2008
 ShearBeamLT
-SoftContact
 static
 transient
 truss

@@ -1,0 +1,38 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add material # <.> type sanisand2004 mass_density = <M/L^3> e0 = <.> sanisand2004_G0 = <.> poisson_ratio = <.> sanisand2004_Pat = <stress>  sanisand2004_p_cut = <.>  sanisand2004_Mc = <.>  sanisand2004_c = <.> sanisand2004_lambda_c = <.> sanisand2004_xi = <.>  sanisand2004_ec_ref = <.>  sanisand2004_m = <.>  sanisand2004_h0 = <.> sanisand2004_ch = <.>  sanisand2004_nb = <.> sanisand2004_A0 = <.> sanisand2004_nd = <.> sanisand2004_z_max = <.>  sanisand2004_cz = <.> initial_confining_stress = <stress>  algorithm = <explicit|implicit>  number_of_subincrements = <.>  maximum_number_of_iterations = <.>  tolerance_1 = <.>  tolerance_2 = <.>;
+add material # $1 type sanisand2004 
+	mass_density = $2 
+	e0 = $3 
+	sanisand2004_G0 = $4 
+	poisson_ratio = $5 
+	sanisand2004_Pat = $6  
+	sanisand2004_p_cut = $7  
+	sanisand2004_Mc = $8  
+	sanisand2004_c = $9 
+	sanisand2004_lambda_c = $10 
+	sanisand2004_xi = $11  
+	sanisand2004_ec_ref = $12  
+	sanisand2004_m = $13  
+	sanisand2004_h0 = $14 
+	sanisand2004_ch = $15  
+	sanisand2004_nb = $16 
+	sanisand2004_A0 = $17 
+	sanisand2004_nd = $18 
+	sanisand2004_z_max = $19  
+	sanisand2004_cz = $20 
+	initial_confining_stress = $21  
+	algorithm = $22  
+	number_of_subincrements = $23  
+	maximum_number_of_iterations = $24  
+	tolerance_1 = $25  
+	tolerance_2 = $26;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_material_sanisand2004_mass_density</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

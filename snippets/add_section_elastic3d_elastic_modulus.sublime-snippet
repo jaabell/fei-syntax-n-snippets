@@ -1,0 +1,18 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add section # <.> type elastic3d elastic_modulus = <F/L^2> cross_section = <L^2> bending_Iz = <L^4> bending_Iy=<L^4> torsion_Jx=<L^4> ;
+add section # $1 type elastic3d 
+	elastic_modulus = $2 
+	cross_section = $3 
+	bending_Iz = $4 
+	bending_Iy = $5 
+	torsion_Jx = $6 ;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_section_elastic3d_elastic_modulus</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

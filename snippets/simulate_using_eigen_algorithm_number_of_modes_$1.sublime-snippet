@@ -1,0 +1,14 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// simulate using eigen algorithm number_of_modes = <.>;
+simulate using eigen algorithm 
+	number_of_modes = $1;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>simulate_using_eigen_algorithm_number_of_modes_$1</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

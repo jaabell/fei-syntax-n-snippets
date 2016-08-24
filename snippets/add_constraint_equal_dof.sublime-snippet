@@ -1,0 +1,13 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add constraint equal dof with node # <.> dof <.> master and node # <.> dof <.> slave;
+add constraint equal dof with node # $1 dof $2 master and node # $3 dof $4 slave;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_constraint_equal_dof</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

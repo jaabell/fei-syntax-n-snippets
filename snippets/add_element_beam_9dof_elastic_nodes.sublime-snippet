@@ -1,0 +1,23 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add element # <.> type beam_9dof_elastic with nodes (<.>, <.>) cross_section = <area> elastic_modulus = <F/L^2> shear_modulus = <F/L^2> torsion_Jx = <length^4> bending_Iy = <length^4> bending_Iz = <length^4> mass_density = <M/L^3>  xz_plane_vector = (<.>, <.>, <.> ) joint_1_offset = (<L>, <L>, <L> ) joint_2_offset = (<L>, <L>, <L> );
+add element # $1 type beam_9dof_elastic with nodes ($2, $3) 
+	cross_section = $4 
+	elastic_modulus = $5 
+	shear_modulus = $6 
+	torsion_Jx = $7 
+	bending_Iy = $8 
+	bending_Iz = $9 
+	mass_density = $10  
+	xz_plane_vector = ($11, $12, $13 ) 
+	joint_1_offset = ($14, $15, $16 ) 
+	joint_2_offset = ($17, $18, $19 );
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_element_beam_9dof_elastic_nodes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

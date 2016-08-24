@@ -1,0 +1,14 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add element # <.> type ShearBeamLT with nodes (<.>, <.>) cross_section = <l^2> use material # <.>;
+add element # $1 type ShearBeamLT with nodes ($2, $3) 
+	cross_section = $4 use material # $5;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_element_ShearBeamLT_nodes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

@@ -99,7 +99,6 @@ Imz
 in
 increment
 initial_confining_stress
-initial_normal_stiffness
 initial_velocity
 integration
 integration_points
@@ -160,7 +159,6 @@ Niso3d_phi0
 Niso3d_Rf
 node
 nodes
-non_converged_substeps
 normal_damping
 normal_stiffness
 number_of_integration_points
@@ -228,7 +226,6 @@ sanisand2008_theta_c
 sanisand2008_X
 sanisand2008_xi
 sanisand2008_z_max
-save
 scale_factor
 section
 section_number
@@ -248,7 +245,6 @@ static
 steps
 steps
 stiffness_to_use
-stiffning_rate
 strain
 strain_at_compressive_strength
 strain_at_crushing_strength

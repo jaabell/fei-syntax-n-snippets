@@ -1,0 +1,18 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add damping # <.> type Caughey4th with a0 = <time> a1 = <1/time> a2 = <.> a3 = <.> stiffness_to_use = <Initial_Stiffness|Current_Stiffness|Last_Committed_Stiffness>;
+add damping # $1 type Caughey4th with 
+	a0 = $2 
+	a1 = $3 
+	a2 = $4 
+	a3 = $5 
+	stiffness_to_use = $6;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_damping_Caughey4th_a0</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

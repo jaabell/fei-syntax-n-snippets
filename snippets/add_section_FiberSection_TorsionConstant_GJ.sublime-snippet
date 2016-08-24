@@ -1,0 +1,14 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add section # <.> type FiberSection TorsionConstant_GJ = <F*L^2>
+add section # $1 type FiberSection 
+	TorsionConstant_GJ = $2
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_section_FiberSection_TorsionConstant_GJ</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>
