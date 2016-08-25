@@ -1,0 +1,13 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add load # <.> to all elements type self_weight use acceleration field # <.>;
+add load # $1 to all elements type self_weight use acceleration field # $2;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_load_all_elements</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

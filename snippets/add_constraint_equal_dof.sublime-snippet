@@ -1,8 +1,8 @@
 <!-- FEI developer aids for Sublime Text  -->
 <snippet>
 	<content><![CDATA[
-// add constraint equal dof with master node # <.> and slave node # <.> dof to constrain <.>;
-add constraint equal dof with master node # $1 and slave node # $2 dof to constrain $3;
+// add constraint equal dof with node # <.> dof <.> master and node # <.> dof <.> slave;
+add constraint equal dof with node # $1 dof $2 master and node # $3 dof $4 slave;
 
 
 	]]></content>

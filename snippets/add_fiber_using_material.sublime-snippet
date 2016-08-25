@@ -1,0 +1,15 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add fiber # <.> using material # <.> to section # <.>  fiber_cross_section = <area> fiber_location = (<L>,<L>);
+add fiber # $1 using material # $2 to section # $3  
+	fiber_cross_section = $4 
+	fiber_location = ($5,$6);
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_fiber_using_material</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

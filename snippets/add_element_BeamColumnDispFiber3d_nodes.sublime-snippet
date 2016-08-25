@@ -1,0 +1,19 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add element # <.> type BeamColumnDispFiber3d with nodes (<.>, <.>) number_of_integration_points = <.> section_number = <.> mass_density = <M/L^3>  xz_plane_vector = (<.>, <.>, <.> ) joint_1_offset = (<L>, <L>, <L> ) joint_2_offset = (<L>, <L>, <L> );
+add element # $1 type BeamColumnDispFiber3d with nodes ($2, $3) 
+	number_of_integration_points = $4 
+	section_number = $5 
+	mass_density = $6  
+	xz_plane_vector = ($7, $8, $9 ) 
+	joint_1_offset = ($10, $11, $12 ) 
+	joint_2_offset = ($13, $14, $15 );
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_element_BeamColumnDispFiber3d_nodes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

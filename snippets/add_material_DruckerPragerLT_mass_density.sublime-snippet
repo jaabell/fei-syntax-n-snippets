@@ -1,7 +1,7 @@
 <!-- FEI developer aids for Sublime Text  -->
 <snippet>
 	<content><![CDATA[
-// add material # <.> type DruckerPragerLT mass_density = <M/L^3> elastic_modulus = <F/L^2> poisson_ratio = <.> druckerprager_k = <F/L^2> kinematic_hardening_rate = <F/L^2> isotropic_hardening_rate = <F/L^2> initial_confining_stress = exp;
+// add material # <.> type DruckerPragerLT mass_density = <M/L^3> elastic_modulus = <F/L^2> poisson_ratio = <.> druckerprager_k = <> kinematic_hardening_rate = <F/L^2> isotropic_hardening_rate = <F/L^2> initial_confining_stress = exp;
 add material # $1 type DruckerPragerLT 
 	mass_density = $2 
 	elastic_modulus = $3 

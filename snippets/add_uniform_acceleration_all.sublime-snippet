@@ -1,0 +1,17 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add uniform acceleration # <.> to all nodes dof <.> time_step = <T> scale_factor = <.> initial_velocity = <L/S> acceleration_file = <string>;
+add uniform acceleration # $1 to all nodes dof $2 
+	time_step = $3 
+	scale_factor = $4 
+	initial_velocity = $5 
+	acceleration_file = $6;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_uniform_acceleration_all</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

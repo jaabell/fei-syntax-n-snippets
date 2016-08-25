@@ -1,0 +1,30 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add material # <.> type NonlinearIsotropic3DLT mass_density = <M/L^3>  Niso3d_K = <F/L^2> Niso3d_Kur = <F/L^2> Niso3d_n = <.> Niso3d_c = <.> Niso3d_phi0 = <.> Niso3d_dphi = <.> Niso3d_Rf = <.> Niso3d_K0 = <.> Niso3d_Kb = <.> Niso3d_m = <.> Niso3d_pa = <F/L^2> Niso3d_K2 = <.> Niso3d_B = <.> Niso3d_Et = <F/L^2> Niso3d_Ei = <F/L^2> Niso3d_Er = <F/L^2>
+add material # $1 type NonlinearIsotropic3DLT 
+	mass_density = $2  
+	Niso3d_K = $3 
+	Niso3d_Kur = $4 
+	Niso3d_n = $5 
+	Niso3d_c = $6 
+	Niso3d_phi0 = $7 
+	Niso3d_dphi = $8 
+	Niso3d_Rf = $9 
+	Niso3d_K0 = $10 
+	Niso3d_Kb = $11 
+	Niso3d_m = $12 
+	Niso3d_pa = $13 
+	Niso3d_K2 = $14 
+	Niso3d_B = $15 
+	Niso3d_Et = $16 
+	Niso3d_Ei = $17 
+	Niso3d_Er = $18
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_material_NonlinearIsotropic3DLT_mass_density</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>
