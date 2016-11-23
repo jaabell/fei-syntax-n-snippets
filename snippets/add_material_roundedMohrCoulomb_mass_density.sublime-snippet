@@ -1,0 +1,23 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add material # <.> type roundedMohrCoulomb mass_density = <M/L^3> elastic_modulus = <F/L^2> poisson_ratio = <.> RMC_m = <.> RMC_qa = <F/L^2> RMC_pc = <F/L^2> RMC_e = <.> RMC_eta0 = <.> RMC_Heta = <F/L^2> initial_confining_stress = <F/L^2>
+add material # $1 type roundedMohrCoulomb 
+	mass_density = $2 
+	elastic_modulus = $3 
+	poisson_ratio = $4 
+	RMC_m = $5 
+	RMC_qa = $6 
+	RMC_pc = $7 
+	RMC_e = $8 
+	RMC_eta0 = $9 
+	RMC_Heta = $10 
+	initial_confining_stress = $11
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_material_roundedMohrCoulomb_mass_density</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

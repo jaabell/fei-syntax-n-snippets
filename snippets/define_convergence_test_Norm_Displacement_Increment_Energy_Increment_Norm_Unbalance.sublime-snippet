@@ -1,8 +1,8 @@
 <!-- FEI developer aids for Sublime Text  -->
 <snippet>
 	<content><![CDATA[
-// define convergence test Norm_Displacement_Increment / Energy_Increment / Norm_Unbalance tolerance = <.> maximum_iterations = <.> verbose_level = <0>|<1>|<2>;
-define convergence test Norm_Displacement_Increment / Energy_Increment / Norm_Unbalance 
+// define convergence test Norm_Displacement_Increment / Energy_Increment / Norm_Unbalance / Relative_Norm_Displacement_Increment / Relative_Energy_Increment / Relative_Norm_Unbalance tolerance = <.> maximum_iterations = <.> verbose_level = <0>|<1>|<2>;
+define convergence test Norm_Displacement_Increment / Energy_Increment / Norm_Unbalance / Relative_Norm_Displacement_Increment / Relative_Energy_Increment / Relative_Norm_Unbalance 
 	tolerance = $1 
 	maximum_iterations = $2 
 	verbose_level = $3|$4|$5;

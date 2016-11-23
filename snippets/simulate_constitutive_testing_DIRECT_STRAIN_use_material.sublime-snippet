@@ -1,0 +1,17 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// simulate constitutive testing DIRECT_STRAIN use material # <.> scale_factor = <.> series_file = <string>  sigma0 = ( <F/L^2> , <F/L^2> , <F/L^2> , <F/L^2> , <F/L^2> , <F/L^2> ) verbose_output = <.>
+simulate constitutive testing DIRECT_STRAIN use material # $1 
+	scale_factor = $2 
+	series_file = $3  
+	sigma0 = ( $4 , $5 , $6 , $7 , $8 , $9 ) 
+	verbose_output = $10
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>simulate_constitutive_testing_DIRECT_STRAIN_use_material</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>
