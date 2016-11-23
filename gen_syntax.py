@@ -9,7 +9,7 @@ import simplejson
 os.system("rm -r snippets")
 
 # updating snippets and keywords
-os.system("svn export --force https://github.com/BorisJeremic/Real-ESSI/trunk/DSL/snippets ") 
+os.system("svn export --force https://github.com/BorisJeremic/Real-ESSI/branches/sumeet/DSL/snippets ") 
 
 # need to create language json file
 filename = "fei.JSON-tmLanguage"

@@ -1,0 +1,21 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add material # <.> type CamClay mass_density = <M/L^3> M = <.> lambda = <.> kappa = <.> e0 = <.> p0 = <F/L^2> Poisson_ratio = <.> initial_confining_stress = <F/L^2>
+add material # $1 type CamClay 
+	mass_density = $2 
+	M = $3 
+	lambda = $4 
+	kappa = $5 
+	e0 = $6 
+	p0 = $7 
+	Poisson_ratio = $8 
+	initial_confining_stress = $9
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_material_CamClay_mass_density</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

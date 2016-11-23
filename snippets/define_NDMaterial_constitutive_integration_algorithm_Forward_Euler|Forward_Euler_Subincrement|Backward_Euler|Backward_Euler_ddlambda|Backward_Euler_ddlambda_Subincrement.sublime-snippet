@@ -1,0 +1,16 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// define NDMaterial constitutive integration algorithm Forward_Euler|Forward_Euler_Subincrement|Backward_Euler|Backward_Euler_ddlambda|Backward_Euler_ddlambda_Subincrement yield_function_relative_tolerance  = <.> stress_relative_tolerance = <.> maximum_iterations = <.>;
+define NDMaterial constitutive integration algorithm Forward_Euler|Forward_Euler_Subincrement|Backward_Euler|Backward_Euler_ddlambda|Backward_Euler_ddlambda_Subincrement 
+	yield_function_relative_tolerance = $1 
+	stress_relative_tolerance = $2 
+	maximum_iterations = $3;
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>define_NDMaterial_constitutive_integration_algorithm_Forward_Euler|Forward_Euler_Subincrement|Backward_Euler|Backward_Euler_ddlambda|Backward_Euler_ddlambda_Subincrement</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>

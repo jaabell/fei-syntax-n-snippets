@@ -1,0 +1,20 @@
+<!-- FEI developer aids for Sublime Text  -->
+<snippet>
+	<content><![CDATA[
+// add element # <.> type SoftWetContact with nodes (<.>, <.>) initial_normal_stiffness = <F/L> stiffning_rate = <m^-1> tangential_stiffness = <F/L> normal_damping = <F/L> tangential_damping = <F/L>  friction_ratio = <.>  contact_plane_vector = (<.>, <.>, <.> );
+add element # $1 type SoftWetContact with nodes ($2, $3) 
+	initial_normal_stiffness = $4 
+	stiffning_rate = $5 
+	tangential_stiffness = $6 
+	normal_damping = $7 
+	tangential_damping = $8  
+	friction_ratio = $9  
+	contact_plane_vector = ($10, $11, $12 );
+
+
+	]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<tabTrigger>add_element_SoftWetContact_nodes</tabTrigger>
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<scope>source.fei</scope>
+</snippet>
